@@ -1,150 +1,118 @@
-Here’s a **clean, professional README.md** you can directly paste into your repo 👇
+# 📈 InC\_StockZ
 
----
+InC\_StockZ is a decentralized stock market tracking and simulation platform built for the **InC '26** hackathon. Leveraging the **Internet Computer (ICP)** and deployed via **Caffeine**, it provides a high-performance, tamper-proof environment for financial data visualization and mock trading.
 
-# 📊 InC_StockZ
+## 🚀 Live Demo
 
-A **stock market simulation and analysis platform** designed to help users learn, practice, and experiment with trading using **virtual money**.
+Access the live application here:
+**[InC\_StockZ on Caffeine](https://stockz-hx8.caffeine.xyz/#caffeineAdminToken=028088c42c59fa6d998a1aacb824518c7ccbee0a6e8d35591f616eebbe4157ae)**
 
----
-
-## 🚀 Overview
-
-**InC_StockZ** is a mock trading application that enables users to:
-
-* 📈 Track real-time stock data
-* 💰 Simulate buying and selling stocks
-* 📊 Analyze market trends
-* 🧠 Practice trading strategies without financial risk
-
----
-
-## 🎯 Problem Statement
-
-Many beginners want to learn stock trading but face:
-
-* ❌ Risk of losing real money
-* ❌ Lack of practical exposure
-* ❌ Complex trading platforms
-
----
-
-## 💡 Solution
-
-**InC_StockZ** provides:
-
-* ✅ A safe, simulated trading environment
-* ✅ Real-time market data
-* ✅ Hands-on learning experience
-* ✅ Zero financial risk
-
----
+-----
 
 ## ✨ Features
 
-* 📡 Live Stock Data Integration (via **yFinance API**)
-* 💼 Virtual Portfolio Management
-* 📉 Buy/Sell Simulation
-* 📊 Performance Tracking
-* 🧠 Risk-Free Learning Environment
-* 🌐 Interactive UI (Streamlit-based)
+  * **Real-time Market Data:** Live tracking of global stock indices and individual tickers.
+  * **Decentralized Backend:** Built on the Internet Computer for enhanced security and transparency.
+  * **Seamless Deployment:** Fully integrated with the Caffeine cloud for instant scaling.
+  * **Modern UI:** A responsive and intuitive interface built with TypeScript and CSS.
+  * **Dockerized Environment:** Ensures consistency across development and production environments.
 
----
+-----
 
 ## 🛠️ Tech Stack
 
-| Layer           | Technology   |
-| --------------- | ------------ |
-| Frontend        | Streamlit    |
-| Backend         | Python       |
-| Data Source     | yFinance API |
-| Version Control | Git + GitHub |
+  * **Frontend:** TypeScript, JavaScript, HTML5, CSS3
+  * **Infrastructure:** [Internet Computer (ICP)](https://internetcomputer.org/)
+  * **Deployment:** [Caffeine](https://www.google.com/search?q=https://caffeine.xyz/)
+  * **DevOps:** Docker, Shell Scripting
 
----
+-----
 
 ## 📂 Project Structure
 
-```
+```text
 InC_StockZ/
-│── app.py              # Main application file
-│── modules/           # Custom modules (data handling, logic)
-│── requirements.txt   # Dependencies
-│── README.md          # Project documentation
+├── src/                # Frontend and backend source code
+├── scripts/            # Automation and utility scripts
+├── Dockerfile          # Containerization configuration
+├── dfx.json            # Internet Computer configuration
+├── caffeine.lock.json  # Caffeine deployment lock file
+├── build.sh            # Build automation script
+└── deploy.sh           # Deployment automation script
 ```
 
----
+-----
 
-## ⚙️ Installation & Setup
+## ⚙️ Setup & Installation
 
-### 1️⃣ Clone the Repository
+### Prerequisites
+
+  * [Node.js](https://nodejs.org/) (v18 or higher)
+  * [DFX SDK](https://www.google.com/search?q=https://internetcomputer.org/docs/current/developer-docs/setup/install/index.md) (for ICP development)
+  * [Docker](https://www.docker.com/)
+
+### Local Development
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/GitBeat16/InC_StockZ.git
+    cd InC_StockZ
+    ```
+
+2.  **Install dependencies:**
+
+    ```bash
+    pnpm install
+    ```
+
+3.  **Start a local ICP replica:**
+
+    ```bash
+    dfx start --background
+    ```
+
+4.  **Deploy canisters locally:**
+
+    ```bash
+    dfx deploy
+    ```
+
+-----
+
+## 🚢 Deployment
+
+The project is configured for automated deployment to the Caffeine cloud.
+
+**Build and Deploy:**
 
 ```bash
-git clone https://github.com/GitBeat16/InC_StockZ.git
-cd InC_StockZ
+chmod +x build.sh deploy.sh
+./build.sh
+./deploy.sh
 ```
 
-### 2️⃣ Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3️⃣ Run the Application
-
-```bash
-streamlit run app.py
-```
-
----
-
-## 🧑‍💻 Usage Guide
-
-1. Enter a stock ticker (e.g., `AAPL`, `TSLA`)
-2. View real-time stock data 📊
-3. Track your portfolio performance 📈
-4. Experiment with strategies 🧠
-
----
-
-## 🔮 Future Enhancements
-
-* 📊 AI-based stock prediction
-* 📱 Mobile-friendly UI
-* 🧾 Transaction history & analytics
-* 👥 Multi-user support
-* 🏆 Leaderboard for competitions
-
----
+-----
 
 ## 🤝 Contributing
 
-Contributions are welcome!
+1.  Fork the project.
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`).
+3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4.  Push to the branch (`git push origin feature/AmazingFeature`).
+5.  Open a Pull Request.
 
-1. Fork the repository
-2. Create a new branch
-3. Commit your changes
-4. Push and create a Pull Request
-
----
+-----
 
 ## 📜 License
 
-This project is open-source and available under the **MIT License**.
+This project is licensed under the **MIT License** - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
 
----
+-----
 
-🔗 GitHub: [https://github.com/GitBeat16](https://github.com/GitBeat16)
+## 🏆 Hackathon
 
----
+Developed for **InC '26**.
 
-## ⭐ Support
-
-If you like this project:
-
-* ⭐ Star the repo
-* 🍴 Fork it
-* 📢 Share it
-
----
-
-If you want, I can also make a **hackathon-optimized README (more storytelling + impact + judges-friendly)** or add **badges + screenshots + demo GIF** 🔥
+  * **Repository:** [GitBeat16/InC\_StockZ](https://github.com/GitBeat16/InC_StockZ)
+  * **Author:** [GitBeat16](https://github.com/GitBeat16)
